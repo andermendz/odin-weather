@@ -23,7 +23,42 @@ li {
 #global-container {
   background-color: var(--base-color);
   height: 100vh;
-  display: grid;
-  grid-template-rows: 6rem 1fr;
-  grid-template-columns: 1fr;
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  gap: 2rem;
+}
+
+#weather-form{
+  display: flex;
+  flex-flow: column;
+
+  margin-top: 2rem;
+
+  width: 95%;
+  max-width: 30rem;
+}
+
+.form-container{
+  text-align: center;
+  display: flex;
+  flex-flow: column;
+  gap: 0.6rem;
+}
+
+input#location-input{
+  height: 2rem;
+  border-radius: 0.8rem;
+
+}
+
+.information-element{
+  background-color: var(--secondary-color);
+  padding: 1rem;
+  border-radius: 1rem;
+}
+#query-content{
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
 }

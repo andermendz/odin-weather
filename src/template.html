@@ -9,14 +9,26 @@
   <body>
     <div id="global-container">
       <div id="weather-form">
-        <form >
-          <label for="location-input">Search your Location</label>
-          <input type="text" name="location-input" id="location-input">
-          <button type="submit" id="submit-button">Search</button>
+        <form>
+          <div class="form-container">
+            <label for="location-input">Search your Location</label>
+            <input type="text" name="location-input" id="location-input" />
+            <button type="submit" id="submit-button">Search</button>
+          </div>
         </form>
+      </div>
 
-        <div id="raw-content">
-
+      <div id="query-content">
+        <div class="information-element">
+          <informationtitle> Location </informationtitle>
+          <div id="ie-location"></div>
+        </div>
+        <div class="information-element">
+          <informationtitle> Timezone</informationtitle>
+          <div id="ie-timezone"></div>
+        </div>    <div class="information-element">
+          <informationtitle> Current Temperature </informationtitle>
+          <div id="ie-current-temp"></div>
         </div>
       </div>
     </div>
