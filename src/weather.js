@@ -13,6 +13,7 @@ export async function getData(location) {
 
   } catch (error){
     console.log(error)
+    alert('We could not find your city')
     return error;
   }
 }
