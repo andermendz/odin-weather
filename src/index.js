@@ -7,6 +7,7 @@ const informationElementLocation = document.getElementById("ie-location");
 const informationElementTimezone = document.getElementById("ie-timezone");
 const informationElementCurrentTemperature =
   document.getElementById("ie-current-temp");
+const informationElementCurrentConditions = document.getElementById("current-conditions")
 
 function queryLocation() {
   submitButton.onclick = async (e) => {
@@ -22,6 +23,8 @@ function queryLocation() {
           query.currentConditions.temp +
           " feels like " +
           query.currentConditions.feelslike;
+
+          informationElementCurrentConditions.innerHTML = query.currentConditions.conditions;
       } else {
         console.log("oh there is an error");
         alert("We could not find your city");
