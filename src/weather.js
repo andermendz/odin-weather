@@ -1,7 +1,7 @@
 export async function getData(location) {
   try {
     const locationQuery = location;
-    const apiKey = ''
+    const apiKey = "";
 
     let query = await fetch(
       `https://weather.visualcrossing.com/VisualCrossingWebServices/rest/services/timeline/${locationQuery}?unitGroup=metric&key=${apiKey}&contentType=json`
@@ -9,11 +9,9 @@ export async function getData(location) {
 
     let data = await query.json();
     console.log(data);
-    return data
-
-  } catch (error){
-    console.log(error)
-    alert('We could not find your city')
+    return data;
+  } catch (error) {
+    console.log(error);
     return error;
   }
 }
