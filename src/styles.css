@@ -68,7 +68,7 @@ input#location-input {
   gap: 1rem;
 }
 
-.current-conditions {
+/* .current-conditions {
   display: flex;
   gap: 1rem;
   text-align: center;
@@ -84,4 +84,4 @@ input#location-input {
   border-radius: 1rem;
   background-color: var(--base-color);
 
-}
+} */

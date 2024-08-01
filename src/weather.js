@@ -1,7 +1,7 @@
 export async function getData(location) {
   try {
     const locationQuery = location;
-    const apiKey = "";
+    const apiKey = "TJ8L24SGR7PKYTYWS8WKMGURN";
 
     let query = await fetch(
       `https://weather.visualcrossing.com/VisualCrossingWebServices/rest/services/timeline/${locationQuery}?unitGroup=metric&key=${apiKey}&contentType=json`
